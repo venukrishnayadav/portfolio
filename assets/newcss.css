@@ -433,6 +433,16 @@ img {
 
 .skills__container {
   row-gap: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.skills__container img {
+  width: 100px; /* you can adjust size */
+  height: 100px; /* keep it square */
+  object-fit: contain;
 }
 
 .skills__header {
@@ -449,7 +459,10 @@ img {
 }
 
 .skills__icon {
-  margin-right: var(--mb-0-75);
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
 }
 
 .skills__title {
@@ -462,8 +475,18 @@ img {
 }
 
 .skills__list {
-  row-gap: 1.5rem;
-  padding-left: 2.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+.skills__data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .skills__titles {
@@ -473,8 +496,7 @@ img {
 }
 
 .skills__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-size: 1rem;
 }
 
 .skills__bar,
